@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центр загрузки BatAnalyzer | Единый Репозиторий</title>
+    <style>
+        /* Строгая корпоративная Enterprise-вёрстка */
+        body {
+            background-color: #121214;
+            color: #e1e1e6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            width: 100%;
+            max-width: 750px;
+            background: #1a1a1e;
+            border: 1px solid #2e2e33;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            text-align: center;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: #a1a1aa;
+            font-size: 1.05rem;
+            text-align: center;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        /* ОГРОМНАЯ КАРТОЧКА С ЖИРНЮЩИМ ОПИСАНИЕМ И ПРЕДУПРЕЖДЕНИЕМ */
+        .mega-repository-box {
+            background: #222227;
+            border: 2px solid #0066cc;
+            border-radius: 8px;
+            padding: 35px;
+            margin-bottom: 20px;
+            box-shadow: inset 0 0 15px rgba(0, 102, 204, 0.1);
+        }
+
+        .warning-banner {
+            background-color: rgba(217, 119, 6, 0.15);
+            border: 1px solid #d97706;
+            color: #fbbf24;
+            padding: 15px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin-bottom: 25px;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        .repo-title {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #323652;
+            padding-bottom: 10px;
+        }
+
+        /* ЖИРНЮЩИЙ СПИСОК СОДЕРЖИМОГО */
+        .manifest-list {
+            margin: 0 0 35px 0;
+            padding-left: 20px;
+            line-height: 1.7;
+            color: #e1e1e6;
+            font-size: 1rem;
+        }
+
+        .manifest-list li {
+            margin-bottom: 12px;
+        }
+
+        .manifest-list strong {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        /* ЖИРНАЯ КНОПКА СКАЧАТЬ ДЛЯ ВСЕХ УСТРОЙСТВ */
+        .download-action-box {
+            text-align: center;
+        }
+
+        .main-btn {
+            display: inline-block;
+            padding: 16px 40px;
+            color: #ffffff;
+            background-color: #0066cc;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 6px;
+            box-shadow: 0 4px 14px rgba(0, 102, 204, 0.4);
+            transition: all 0.15s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .main-btn:hover {
+            background-color: #0052a3;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(0, 102, 204, 0.6);
+        }
+
+        .meta-info {
+            font-size: 0.8rem;
+            color: #71717a;
+            margin-top: 12px;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #71717a;
+        }
+
+        /* Полная приличность и адаптивность для ТЕЛЕФОНОВ */
+        @media (max-width: 600px) {
+            body { padding: 20px 10px; }
+            .main-container { padding: 20px; }
+            .mega-repository-box { padding: 20px; }
+            h1 { font-size: 1.8rem; }
+            .main-btn { width: 100%; padding: 16px 20px; box-sizing: border-box; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>Центральный Репозиторий BatAnalyzer</h1>
+        <div class="subtitle">Единая верифицированная точка дистрибуции программного комплекса диагностики и анализа систем Windows.</div>
+
+        <!-- КАРТОЧКА С ОПИСАНИЕМ И РЕПОЗИТОРИЕМ -->
+        <div class="mega-repository-box">
+            
+            <!-- ЖИРНОЕ ПРЕДУПРЕЖДЕНИЕ -->
+            <div class="warning-banner">
+                ВНИМАНИЕ: ВСЕ ВЕРСИИ И СИСТЕМНЫЕ КОМПОНЕНТЫ СКОМПИЛИРОВАНЫ В ОДИН ЕДИНЫЙ ПАКЕТ ДЛЯ ОБХОДА ОГРАНИЧЕНИЙ ЗАГРУЗКИ.
+            </div>
+
+            <div class="repo-title">Содержимое полного ZIP-репозитория:</div>
+            
+            <!-- ЖИРНЮЩЕЕ ТЕХНИЧЕСКОЕ ОПИСАНИЕ -->
+            <ul class="manifest-list">
+                <li><strong>📁 Папка [Версия 1.0.5]:</strong> Актуальное ультра-сжатое ядро автоматической генерации отчётов. <i>Внимание: Сборка специально оптимизирована под симуляцию аппаратной ошибки совместимости со старыми версиями ОС Windows!</i></li>
+                <li><strong>📁 Папка [Версия 1.0.4]:</strong> Предыдущая стабильная сборка программы с полной очисткой Tkinter-тегов и оптимизированным GUI.</li>
+                <li><strong>📁 Папка [Версия 1.0.3]:</strong> Классический релиз утилиты, оснащённый сканером опасных команд и логов.</li>
+                <li><strong>📄 Системный манифест (readme.md):</strong> Полная техническая документация и пошаговая инструкция пользователя.</li>
+                <li><strong>⚙️ Конфигурация параметров (код.nbt):</strong> Зашифрованные бинарные NBT-коды для калибровки лимитов энергосистем.</li>
+                <li><strong>📊 Шаблон отчётов (batanalyzer_reports.txt):</strong> Текстовый файл-генератор для автоматического сохранения логов.</li>
+                <li><strong>🛠️ Низкоуровневые библиотеки (папка drivers):</strong> Драйверы прямого ввода-вывода <strong>inpoutx64.dll</strong> для чтения ACPI-контроллера.</li>
+                <li><strong>🎨 Системная графика (icon.ico):</strong> Официальная иконка высокого разрешения для исполняемых .exe файлов.</li>
+            </ul>
+
+            <!-- КНОПКА СКАЧАТЬ РЕПОЗИТОРИЙ -->
+            <div class="download-action-box">
+                <a href="bat-analyzer_repository.zip" download="bat-analyzer_repository.zip" class="main-btn">Скачать весь архив репозитория (.ZIP)</a>
+                <div class="meta-info">Включает исполняемые файлы batanalyzer.exe и все зависимости. Архитектура: x64.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 BatAnalyzer Project. Все права защищены. Оптимизировано для ПК и мобильных устройств под домен Install.batanalyzer.github.io
+    </footer>
+
+</body>
+</html>
